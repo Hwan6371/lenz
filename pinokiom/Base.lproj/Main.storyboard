@@ -1,24 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--IntroVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SB_Intro" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="IntroVC" customModule="pinokiom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imb_logo_big" translatesAutoresizingMaskIntoConstraints="NO" id="Nts-au-x8H">
+                                <rect key="frame" x="20" y="259" width="374" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="985-Pd-uGn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QT-pW-t8x">
+                                <rect key="frame" x="58" y="452" width="128" height="128"/>
+                                <color key="backgroundColor" red="0.74117647058823533" green="0.20784313725490194" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="dwD-Uo-DFL"/>
+                                    <constraint firstAttribute="height" constant="128" id="sqZ-g5-Nwh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="구인">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Btn_jobOffer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sps-rn-xpP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXm-gp-hv9">
+                                <rect key="frame" x="228" y="452" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ch4-Qk-7AG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="r6E-47-ml0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="구직">
+                                    <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="Btn_jobSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Kb-Cr-Tmm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vXm-gp-hv9" firstAttribute="top" secondItem="Nts-au-x8H" secondAttribute="bottom" constant="15" id="E6f-gq-0Jm"/>
+                            <constraint firstItem="1QT-pW-t8x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-85" id="EyK-Pi-1Ta"/>
+                            <constraint firstItem="1QT-pW-t8x" firstAttribute="top" secondItem="Nts-au-x8H" secondAttribute="bottom" constant="15" id="SJB-uD-Ey6"/>
+                            <constraint firstItem="vXm-gp-hv9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="85" id="gT6-GG-C1d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nts-au-x8H" secondAttribute="trailing" constant="20" id="kp7-Oe-tLn"/>
+                            <constraint firstItem="Nts-au-x8H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nLu-pZ-UDB"/>
+                            <constraint firstItem="Nts-au-x8H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="o0x-fg-cXh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="BT_jobOffer" destination="1QT-pW-t8x" id="fez-m4-kOQ"/>
+                        <outlet property="BT_jobSearch" destination="vXm-gp-hv9" id="u5z-7b-QTo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="imb_logo_big" width="800" height="320"/>
+    </resources>
 </document>

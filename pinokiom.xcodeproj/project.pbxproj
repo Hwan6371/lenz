@@ -13,6 +13,12 @@
 		330FE220245E99D700D2D5E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330FE21E245E99D700D2D5E7 /* Main.storyboard */; };
 		330FE222245E99DC00D2D5E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330FE221245E99DC00D2D5E7 /* Assets.xcassets */; };
 		330FE225245E99DC00D2D5E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330FE223245E99DC00D2D5E7 /* LaunchScreen.storyboard */; };
+		330FE22E245E9FFC00D2D5E7 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330FE22D245E9FFC00D2D5E7 /* IntroVC.swift */; };
+		330FE231245EA11500D2D5E7 /* hexStringToUIColorClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330FE230245EA11500D2D5E7 /* hexStringToUIColorClass.swift */; };
+		330FE233245EA16400D2D5E7 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330FE232245EA16400D2D5E7 /* Singleton.swift */; };
+		330FE237245EA52F00D2D5E7 /* jobOffer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330FE236245EA52F00D2D5E7 /* jobOffer.storyboard */; };
+		330FE239245EA53F00D2D5E7 /* jobSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330FE238245EA53F00D2D5E7 /* jobSearch.storyboard */; };
+		33FEAFA3246010EA004AD881 /* JS_MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEAFA2246010EA004AD881 /* JS_MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		330FE221245E99DC00D2D5E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		330FE224245E99DC00D2D5E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		330FE226245E99DC00D2D5E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		330FE22D245E9FFC00D2D5E7 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
+		330FE230245EA11500D2D5E7 /* hexStringToUIColorClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hexStringToUIColorClass.swift; sourceTree = "<group>"; };
+		330FE232245EA16400D2D5E7 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		330FE236245EA52F00D2D5E7 /* jobOffer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = jobOffer.storyboard; sourceTree = "<group>"; };
+		330FE238245EA53F00D2D5E7 /* jobSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = jobSearch.storyboard; sourceTree = "<group>"; };
+		33FEAFA2246010EA004AD881 /* JS_MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JS_MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		330FE217245E99D700D2D5E7 /* pinokiom */ = {
 			isa = PBXGroup;
 			children = (
+				330FE234245EA50D00D2D5E7 /* jobOffer */,
+				330FE235245EA51300D2D5E7 /* jobSearch */,
+				330FE22F245EA03B00D2D5E7 /* Util */,
+				330FE22C245E9FDE00D2D5E7 /* Intro */,
 				330FE218245E99D700D2D5E7 /* AppDelegate.swift */,
 				330FE21A245E99D700D2D5E7 /* SceneDelegate.swift */,
 				330FE21C245E99D700D2D5E7 /* ViewController.swift */,
 				330FE21E245E99D700D2D5E7 /* Main.storyboard */,
+				330FE236245EA52F00D2D5E7 /* jobOffer.storyboard */,
+				330FE238245EA53F00D2D5E7 /* jobSearch.storyboard */,
 				330FE221245E99DC00D2D5E7 /* Assets.xcassets */,
 				330FE223245E99DC00D2D5E7 /* LaunchScreen.storyboard */,
 				330FE226245E99DC00D2D5E7 /* Info.plist */,
 			);
 			path = pinokiom;
+			sourceTree = "<group>";
+		};
+		330FE22C245E9FDE00D2D5E7 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				330FE22D245E9FFC00D2D5E7 /* IntroVC.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		330FE22F245EA03B00D2D5E7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				330FE230245EA11500D2D5E7 /* hexStringToUIColorClass.swift */,
+				330FE232245EA16400D2D5E7 /* Singleton.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		330FE234245EA50D00D2D5E7 /* jobOffer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = jobOffer;
+			sourceTree = "<group>";
+		};
+		330FE235245EA51300D2D5E7 /* jobSearch */ = {
+			isa = PBXGroup;
+			children = (
+				33FEAFA2246010EA004AD881 /* JS_MainVC.swift */,
+			);
+			path = jobSearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +178,8 @@
 				330FE225245E99DC00D2D5E7 /* LaunchScreen.storyboard in Resources */,
 				330FE222245E99DC00D2D5E7 /* Assets.xcassets in Resources */,
 				330FE220245E99D700D2D5E7 /* Main.storyboard in Resources */,
+				330FE239245EA53F00D2D5E7 /* jobSearch.storyboard in Resources */,
+				330FE237245EA52F00D2D5E7 /* jobOffer.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330FE231245EA11500D2D5E7 /* hexStringToUIColorClass.swift in Sources */,
+				330FE233245EA16400D2D5E7 /* Singleton.swift in Sources */,
 				330FE21D245E99D700D2D5E7 /* ViewController.swift in Sources */,
+				330FE22E245E9FFC00D2D5E7 /* IntroVC.swift in Sources */,
+				33FEAFA3246010EA004AD881 /* JS_MainVC.swift in Sources */,
 				330FE219245E99D700D2D5E7 /* AppDelegate.swift in Sources */,
 				330FE21B245E99D700D2D5E7 /* SceneDelegate.swift in Sources */,
 			);
